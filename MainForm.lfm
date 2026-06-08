@@ -1,0 +1,362 @@
+object MainForm: TMainForm
+  Left = 232
+  Height = 600
+  Top = 126
+  Width = 900
+  Caption = 'TMaskEdit Examples - Lazarus'
+  ClientHeight = 600
+  ClientWidth = 900
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '2.2.6.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 900
+    ActivePageIndex = 0
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Phone Numbers'
+      ClientHeight = 572
+      ClientWidth = 892
+      object Label1: TLabel
+        Left = 20
+        Height = 17
+        Top = 20
+        Width = 250
+        Caption = 'Landline (00) 0000-0000:'
+        Font.Style = [fsBold]
+      end
+      object Label2: TLabel
+        Left = 20
+        Height = 17
+        Top = 80
+        Width = 250
+        Caption = 'Mobile 99 (99) 9 9999-9999:'
+        Font.Style = [fsBold]
+      end
+      object edtPhone: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 40
+        Width = 300
+        TabOrder = 0
+      end
+      object edtMobile: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 100
+        Width = 300
+        TabOrder = 1
+      end
+      object btnPhoneTest: TButton
+        Left = 20
+        Height = 30
+        Top = 150
+        Width = 100
+        Caption = 'Test'
+        OnClick = btnPhoneTestClick
+        TabOrder = 2
+      end
+      object memoPhoneResult: TMemo
+        Left = 20
+        Height = 350
+        Top = 200
+        Width = 850
+        Lines.Strings = ('Results will appear here...')
+        ScrollBars = ssVertical
+        TabOrder = 3
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Time Formats'
+      ClientHeight = 572
+      ClientWidth = 892
+      object Label3: TLabel
+        Left = 20
+        Height = 17
+        Top = 20
+        Width = 150
+        Caption = 'Start Time HH:MM:'
+        Font.Style = [fsBold]
+      end
+      object Label4: TLabel
+        Left = 20
+        Height = 17
+        Top = 80
+        Width = 150
+        Caption = 'End Time HH:MM:'
+        Font.Style = [fsBold]
+      end
+      object Label5: TLabel
+        Left = 20
+        Height = 17
+        Top = 140
+        Width = 250
+        Caption = 'DateTime YYYY:MM:DD HH:MM:SS:'
+        Font.Style = [fsBold]
+      end
+      object edtTimeStart: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 40
+        Width = 150
+        TabOrder = 0
+      end
+      object edtTimeEnd: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 100
+        Width = 150
+        TabOrder = 1
+      end
+      object edtDateTime: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 160
+        Width = 300
+        TabOrder = 2
+      end
+      object btnTimeTest: TButton
+        Left = 20
+        Height = 30
+        Top = 210
+        Width = 100
+        Caption = 'Test'
+        OnClick = btnTimeTestClick
+        TabOrder = 3
+      end
+      object memoTimeResult: TMemo
+        Left = 20
+        Height = 300
+        Top = 260
+        Width = 850
+        Lines.Strings = ('Results will appear here...')
+        ScrollBars = ssVertical
+        TabOrder = 4
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Numeric'
+      ClientHeight = 572
+      ClientWidth = 892
+      object Label6: TLabel
+        Left = 20
+        Height = 17
+        Top = 20
+        Width = 100
+        Caption = 'Decimal 0.00:'
+        Font.Style = [fsBold]
+      end
+      object Label7: TLabel
+        Left = 20
+        Height = 17
+        Top = 80
+        Width = 100
+        Caption = 'Score 00.0:'
+        Font.Style = [fsBold]
+      end
+      object Label8: TLabel
+        Left = 20
+        Height = 17
+        Top = 140
+        Width = 100
+        Caption = 'Price R$ 0,00:'
+        Font.Style = [fsBold]
+      end
+      object edtDecimal: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 40
+        Width = 150
+        TabOrder = 0
+      end
+      object edtScore: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 100
+        Width = 150
+        TabOrder = 1
+      end
+      object edtPrice: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 160
+        Width = 150
+        TabOrder = 2
+      end
+      object btnNumericTest: TButton
+        Left = 20
+        Height = 30
+        Top = 210
+        Width = 100
+        Caption = 'Test'
+        OnClick = btnNumericTestClick
+        TabOrder = 3
+      end
+      object memoNumericResult: TMemo
+        Left = 20
+        Height = 300
+        Top = 260
+        Width = 850
+        Lines.Strings = ('Results will appear here...')
+        ScrollBars = ssVertical
+        TabOrder = 4
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Addresses'
+      ClientHeight = 572
+      ClientWidth = 892
+      object Label9: TLabel
+        Left = 20
+        Height = 17
+        Top = 20
+        Width = 250
+        Caption = 'IP Address 000.000.000.000:'
+        Font.Style = [fsBold]
+      end
+      object Label10: TLabel
+        Left = 20
+        Height = 17
+        Top = 80
+        Width = 250
+        Caption = 'MAC Address 00:00:00:00:00:00:'
+        Font.Style = [fsBold]
+      end
+      object Label11: TLabel
+        Left = 20
+        Height = 17
+        Top = 140
+        Width = 200
+        Caption = 'Hexadecimal AA AA AA AA:'
+        Font.Style = [fsBold]
+      end
+      object edtIP: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 40
+        Width = 200
+        TabOrder = 0
+      end
+      object edtMAC: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 100
+        Width = 250
+        TabOrder = 1
+      end
+      object edtHex: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 160
+        Width = 200
+        TabOrder = 2
+      end
+      object btnAddressTest: TButton
+        Left = 20
+        Height = 30
+        Top = 210
+        Width = 100
+        Caption = 'Test'
+        OnClick = btnAddressTestClick
+        TabOrder = 3
+      end
+      object memoAddressResult: TMemo
+        Left = 20
+        Height = 300
+        Top = 260
+        Width = 850
+        Lines.Strings = ('Results will appear here...')
+        ScrollBars = ssVertical
+        TabOrder = 4
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Text Filtering'
+      ClientHeight = 572
+      ClientWidth = 892
+      object Label12: TLabel
+        Left = 20
+        Height = 17
+        Top = 20
+        Width = 150
+        Caption = 'First Name:'
+        Font.Style = [fsBold]
+      end
+      object Label13: TLabel
+        Left = 20
+        Height = 17
+        Top = 80
+        Width = 150
+        Caption = 'Last Name:'
+        Font.Style = [fsBold]
+      end
+      object Label14: TLabel
+        Left = 20
+        Height = 17
+        Top = 140
+        Width = 100
+        Caption = 'Email:'
+        Font.Style = [fsBold]
+      end
+      object Label15: TLabel
+        Left = 20
+        Height = 17
+        Top = 200
+        Width = 150
+        Caption = 'Passport (00 00):'
+        Font.Style = [fsBold]
+      end
+      object edtFirstName: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 40
+        Width = 300
+        TabOrder = 0
+      end
+      object edtLastName: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 100
+        Width = 300
+        TabOrder = 1
+      end
+      object edtEmail: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 160
+        Width = 300
+        TabOrder = 2
+      end
+      object edtPassport: TMaskEdit
+        Left = 20
+        Height = 25
+        Top = 220
+        Width = 150
+        TabOrder = 3
+      end
+      object btnTextTest: TButton
+        Left = 20
+        Height = 30
+        Top = 270
+        Width = 100
+        Caption = 'Test'
+        OnClick = btnTextTestClick
+        TabOrder = 4
+      end
+      object memoTextResult: TMemo
+        Left = 20
+        Height = 260
+        Top = 320
+        Width = 850
+        Lines.Strings = ('Results will appear here...')
+        ScrollBars = ssVertical
+        TabOrder = 5
+      end
+    end
+  end
+end

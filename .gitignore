@@ -1,0 +1,43 @@
+# Lazarus/Free Pascal build files
+*.o
+*.or
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.ppu
+*.compiled
+*.pas~
+*.lfm~
+*.lpr~
+
+# IDE directories
+.vscode/
+.idea/
+*.project
+
+# Debug/Output directories
+lib/
+debug/
+release/
+bin/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Backup files
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# Delphi/Lazarus specific
+Backup/
+__history/
+__recovery/
+*.identcache
+*.stat
